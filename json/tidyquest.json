@@ -1,0 +1,44 @@
+{
+  "name": "TidyQuest",
+  "slug": "tidyquest",
+  "categories": [
+    19
+  ],
+  "date_created": "2026-05-14",
+  "type": "ct",
+  "updateable": true,
+  "privileged": false,
+  "interface_port": 3020,
+  "documentation": "https://github.com/mellow-fox/TidyQuest#readme",
+  "website": "https://github.com/mellow-fox/TidyQuest",
+  "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/tidyquest.webp",
+  "description": "Transform household chores into an epic family adventure with RPG mechanics. Complete tasks, earn coins, unlock achievements, and compete with your family on the leaderboard.",
+  "install_methods": [
+    {
+      "type": "default",
+      "script": "ct/tidyquest.sh",
+      "config_path": "/opt/tidyquest/.env",
+      "resources": {
+        "cpu": 2,
+        "ram": 2048,
+        "hdd": 8,
+        "os": "Debian",
+        "version": "13"
+      }
+    }
+  ],
+  "default_credentials": {
+    "username": null,
+    "password": null
+  },
+  "notes": [
+    {
+      "text": "Create your admin account on first access via the web interface.",
+      "type": "info"
+    },
+    {
+      "text": "Data is stored in /opt/tidyquest/data (SQLite database).",
+      "type": "info"
+    }
+  ]
+}
